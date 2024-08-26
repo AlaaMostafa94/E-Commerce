@@ -8,6 +8,7 @@ namespace ApiTest.Repository
         T GetById(int id);
         IEnumerable<T> Find(Expression<Func<T, bool>> expression);
         void Add(T entity);
+        void  Update(T entity);
         void Remove(T entity);
     }
 }

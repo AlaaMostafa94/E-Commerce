@@ -8499,11 +8499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Study\\API\\ApiTest\\ApiTest\\ApiTest\\ApiTest.csproj",
+      "projectUniqueName": "E:\\Projects\\Ecommerce\\API\\ApiTest\\ApiTest.csproj",
       "projectName": "ApiTest",
-      "projectPath": "E:\\Study\\API\\ApiTest\\ApiTest\\ApiTest\\ApiTest.csproj",
+      "projectPath": "E:\\Projects\\Ecommerce\\API\\ApiTest\\ApiTest.csproj",
       "packagesPath": "C:\\Users\\XPRISTO\\.nuget\\packages\\",
-      "outputPath": "E:\\Study\\API\\ApiTest\\ApiTest\\ApiTest\\obj\\",
+      "outputPath": "E:\\Projects\\Ecommerce\\API\\ApiTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

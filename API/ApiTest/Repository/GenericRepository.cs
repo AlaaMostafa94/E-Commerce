@@ -1,4 +1,5 @@
 ﻿using ApiTest.DAL;
+using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace ApiTest.Repository
@@ -34,6 +35,12 @@ namespace ApiTest.Repository
         public void Remove(T entity)
         {
             context.Set<T>().Remove(entity);
+        }
+
+        public void Update(T entity)
+        {
+            context.Entry(entity).State = EntityState.Modified;
+
         }
     }
 }

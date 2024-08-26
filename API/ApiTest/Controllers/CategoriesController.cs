@@ -14,99 +14,104 @@ namespace ApiTest.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        //private readonly ApplicationDbContext _context;
         private readonly IUnitOfWork _unitOfWork;
         public CategoriesController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
-        //public CategoriesController(ApplicationDbContext context)
-        //{
-        //    _context = context;
-        //}
 
-        // GET: api/Categories
+
         [HttpGet]
-        public IEnumerable<Category> GetCategories()
+        public  IActionResult GetCategories()
         {
-            return _unitOfWork.CategoryRepo.GetAll();//_context.Categories.ToListAsync();
+            IEnumerable<Category> categories= _unitOfWork.CategoryRepo.GetAll();
+            return Ok(categories);
         }
 
-        // GET: api/Categories/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Category>> GetCategory(int id)
-        //{
-        //    var category = await _context.Categories.FindAsync(id);
+        [HttpGet("{id}")]
+        public IActionResult GetCategory(int id)
+        {
+            var category = _unitOfWork.CategoryRepo.GetById(id); 
 
-        //    if (category == null)
-        //    {
-        //        return NotFound();
-        //    }
+            if (category == null)
+            {
+                return NotFound();
+            }
 
-        //    return category;
-        //}
+            return Ok(category);
+        }
 
-        // PUT: api/Categories/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutCategory(int id, Category category)
-        //{
-        //    if (id != category.ID)
-        //    {
-        //        return BadRequest();
-        //    }
+        [HttpPut("{id}")]
+        public IActionResult PutCategory(int id, Category category)
+        {
+            if (id != category.ID)
+            {
+                return BadRequest();
+            }
 
-        //    _context.Entry(category).State = EntityState.Modified;
+            _unitOfWork.CategoryRepo.Update(category);
+            try
+            {
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!CategoryExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
+                _unitOfWork.Save();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CategoryExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //    return NoContent();
-        //}
+            return NoContent();
+        }
 
-        // POST: api/Categories
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPost]
-        //public async Task<ActionResult<Category>> PostCategory(Category category)
-        //{
-        //    _context.Categories.Add(category);
-        //    await _context.SaveChangesAsync();
+        [HttpPost]
+        public IActionResult PostCategory(Category category)
+        {
+            _unitOfWork.CategoryRepo.Add(category);
+            int result=_unitOfWork.Save();
 
-        //    return CreatedAtAction("GetCategory", new { id = category.ID }, category);
-        //}
+            if (result == 1)
+            {
+                return Created();
 
-        // DELETE: api/Categories/5
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteCategory(int id)
-        //{
-        //    var category = await _context.Categories.FindAsync(id);
-        //    if (category == null)
-        //    {
-        //        return NotFound();
-        //    }
+            }
+            else
+            {
+                return BadRequest(category);
+            }
+        }
 
-        //    _context.Categories.Remove(category);
-        //    await _context.SaveChangesAsync();
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCategory(int id)
+        {
+            var category = _unitOfWork.CategoryRepo.GetById(id);
+            if (category == null)
+            {
+                return NotFound();
+            }
 
-        //    return NoContent();
-        //}
+            _unitOfWork.CategoryRepo.Remove(category);
+            int result=_unitOfWork.Save();
+            if (result == 1)
+            {
+                return NoContent();
 
-        //private bool CategoryExists(int id)
-        //{
-        //    return _context.Categories.Any(e => e.ID == id);
-        //}
+            }
+            return BadRequest();
+        }
+
+        private bool CategoryExists(int id)
+        {
+            Category category=_unitOfWork.CategoryRepo.Find(c=>c.ID==id).FirstOrDefault();
+            return category != null;
+        }
     }
 }

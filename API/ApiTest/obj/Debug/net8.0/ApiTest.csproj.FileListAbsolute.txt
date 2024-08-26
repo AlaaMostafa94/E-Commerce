@@ -518,3 +518,4 @@ E:\Projects\Ecommerce\API\ApiTest\obj\Debug\net8.0\refint\ApiTest.dll
 E:\Projects\Ecommerce\API\ApiTest\obj\Debug\net8.0\ApiTest.pdb
 E:\Projects\Ecommerce\API\ApiTest\obj\Debug\net8.0\ApiTest.genruntimeconfig.cache
 E:\Projects\Ecommerce\API\ApiTest\obj\Debug\net8.0\ref\ApiTest.dll
+E:\Projects\Ecommerce\API\ApiTest\obj\Debug\net8.0\ApiTest.sourcelink.json

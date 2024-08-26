@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dubtbV7SZh8JVSSH/+V+nWLpVx5GHLabhWr6kGIMJ0w8QnfNulNMXAD313dPJzGt+eMoLVl5oQK7JWUjRaL74g==",
+  "dgSpecHash": "xYdEpGjlqqck2KaLabc/4RhN8CxgO9b8LYO50pBuQjBD2hgxhpR5qgfqN5oVcG8KTdhSFuTnAFVOZb5WB7Dv9A==",
   "success": true,
-  "projectFilePath": "E:\\Study\\API\\ApiTest\\ApiTest\\ApiTest\\ApiTest.csproj",
+  "projectFilePath": "E:\\Projects\\Ecommerce\\API\\ApiTest\\ApiTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XPRISTO\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\XPRISTO\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
