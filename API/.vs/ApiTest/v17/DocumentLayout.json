@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "E:\\Projects\\Ecommerce\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,108 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Repository\\GenericRepository.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\GenericRepository.cs",
-              "RelativeToolTip": "ApiTest\\Repository\\GenericRepository.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCkAAAAhAAAA",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ApiTest\\Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ApiTest\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAgwE0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T22:20:54.172Z",
+              "WhenOpened": "2024-08-27T11:32:15.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Controllers\\CategoriesController.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "ApiTest\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
+              "DocumentIndex": 3,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ApiTest\\Repository\\ProductRepository.cs",
+              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "ApiTest\\Repository\\ProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T12:53:12.696Z",
+              "WhenOpened": "2024-08-27T11:26:28.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Repository\\CategoryRepository.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "ApiTest\\Repository\\CategoryRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwAcAAAA2AAAA",
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "ApiTest\\Repository\\IProductRepository.cs",
+              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\IProductRepository.cs",
+              "RelativeToolTip": "ApiTest\\Repository\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T11:56:21.547Z",
+              "WhenOpened": "2024-08-27T11:17:29.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Repository\\UnitOfWork.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\UnitOfWork.cs",
-              "RelativeToolTip": "ApiTest\\Repository\\UnitOfWork.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "ApiTest\\Controllers\\CategoriesController.cs",
+              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "ApiTest\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwHAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:24:04.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Repository\\ICategoryRepository.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\ICategoryRepository.cs",
-              "RelativeToolTip": "ApiTest\\Repository\\ICategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T11:53:04.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Repository\\IUnitOfWork.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Repository\\IUnitOfWork.cs",
-              "RelativeToolTip": "ApiTest\\Repository\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T15:06:32.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ApiTest\\DAL\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ApiTest\\DAL\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T12:00:20.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ApiTest\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAQwEsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T21:09:36.607Z",
+              "WhenOpened": "2024-08-24T12:53:12.696Z",
               "EditorCaption": ""
             }
           ]

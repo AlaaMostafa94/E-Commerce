@@ -8,6 +8,7 @@ namespace ApiTest.Repository
 
 
         public ICategoryRepository CategoryRepo {  get; }
+        public IProductRepository ProductRepo { get; }
         int Save();
 
 

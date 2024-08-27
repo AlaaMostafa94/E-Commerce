@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ApiTest.DAL;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using ApiTest.Repository;
 
 namespace ApiTest.Controllers
 {
@@ -16,56 +17,65 @@ namespace ApiTest.Controllers
     //[Authorize(AuthenticationSchemes=JwtBearerDefaults.AuthenticationScheme)]
     public class ProductsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
 
-        public ProductsController(ApplicationDbContext context)
+        private readonly IUnitOfWork _unitOfWork;
+        public ProductsController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
-        // GET: api/Products
+  
+
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        public IActionResult GetProducts()
         {
-            return await _context.Products.ToListAsync();
+            IEnumerable<Product> products = _unitOfWork.ProductRepo.GetAll();
+            return Ok(products);
+
         }
 
-        // GET: api/Products/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public IActionResult GetProduct(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = _unitOfWork.ProductRepo.GetById(id); 
 
             if (product == null)
             {
                 return NotFound();
             }
 
-            return product;
+            return Ok(product);
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<List<Product>>> GetProductByCategoryId(int CategoryId)
-        //{
-        //    var products=await _context.Products.Where(p=>p.Category.ID==CategoryId).ToListAsync();
-        //    return products;
-        //}
+        [HttpGet("GetProductsByCategory/{CategoryId}")]
+        
+        public IActionResult GetProductByCategoryId(int CategoryId)
+        {
+            var products = _unitOfWork.ProductRepo.Find(p => p.CategoryID == CategoryId);
+            if (products==null)
+            {
+                return NoContent();
+            }
+            else
+            {
+                return Ok(products);
+            }
+        }
 
-        // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Product product)
+        public IActionResult PutProduct(int id, Product product)
         {
             if (id != product.ID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(product).State = EntityState.Modified;
+            _unitOfWork.ProductRepo.Update(product); 
 
             try
             {
-                await _context.SaveChangesAsync();
+                _unitOfWork.Save(); 
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -82,37 +92,43 @@ namespace ApiTest.Controllers
             return NoContent();
         }
 
-        // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         //[Authorize]
         [HttpPost]
-        public async Task<ActionResult<Product>> PostProduct(Product product)
+        public IActionResult PostProduct(Product product)
         {
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+            _unitOfWork.ProductRepo.Add(product);
+            int result = _unitOfWork.Save();
+            if (result == 1)
+            {
+                return Created();
+            }
 
-            return CreatedAtAction("GetProduct", new { id = product.ID }, product);
+            return BadRequest(product);
         }
 
-        // DELETE: api/Products/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        public IActionResult DeleteProduct(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = _unitOfWork.ProductRepo.GetById(id); 
             if (product == null)
             {
                 return NotFound();
             }
 
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            _unitOfWork.ProductRepo.Remove(product);
+            int result = _unitOfWork.Save();
+            if(result == 1)
+            {
+                return Ok();
+            }
+            return BadRequest();
         }
 
         private bool ProductExists(int id)
         {
-            return _context.Products.Any(e => e.ID == id);
+            Product product = _unitOfWork.ProductRepo.Find(c => c.ID == id).FirstOrDefault();
+            return product != null;
         }
     }
 }

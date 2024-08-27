@@ -9,11 +9,13 @@ namespace ApiTest.Repository
     {
         private ApplicationDbContext context;
         public ICategoryRepository CategoryRepo { get; private set; }
-      
+        public IProductRepository ProductRepo { get; private set; }
+
         public UnitOfWork(ApplicationDbContext context)
         {
             this.context = context;
             CategoryRepo = new CategoryRepository(this.context);
+            ProductRepo=new ProductRepository(this.context);
         }
 
 
