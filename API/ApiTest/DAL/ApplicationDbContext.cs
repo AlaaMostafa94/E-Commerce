@@ -7,6 +7,7 @@ namespace ApiTest.DAL
     public class ApplicationUser : IdentityUser
     {
         public DateOnly? BirthDate { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
 
     }
     public class ApplicationDbContext:IdentityDbContext<ApplicationUser>

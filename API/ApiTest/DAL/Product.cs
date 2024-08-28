@@ -20,7 +20,8 @@ namespace ApiTest.DAL
         public string Image {  get; set; }
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
-        public virtual Category? Category { get; set; }    
+        public virtual Category? Category { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 
 

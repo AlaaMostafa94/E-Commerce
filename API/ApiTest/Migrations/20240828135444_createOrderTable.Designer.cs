@@ -4,6 +4,7 @@ using ApiTest.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiTest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240828135444_createOrderTable")]
+    partial class createOrderTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -301,21 +304,6 @@ namespace ApiTest.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("OrderProduct", b =>
-                {
-                    b.Property<int>("OrdersID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductsID")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrdersID", "ProductsID");
-
-                    b.HasIndex("ProductsID");
-
-                    b.ToTable("OrderProduct");
-                });
-
             modelBuilder.Entity("ApiTest.DAL.Order", b =>
                 {
                     b.HasOne("ApiTest.DAL.ApplicationUser", "applicationUser")
@@ -385,21 +373,6 @@ namespace ApiTest.Migrations
                     b.HasOne("ApiTest.DAL.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("OrderProduct", b =>
-                {
-                    b.HasOne("ApiTest.DAL.Order", null)
-                        .WithMany()
-                        .HasForeignKey("OrdersID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ApiTest.DAL.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
