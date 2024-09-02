@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "E:\\Projects\\Ecommerce\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Projects\\Ecommerce\\API\\ApiTest\\Migrations\\20240828182513_m.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiTest\\Migrations\\20240828182513_m.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\migrations\\20240828141525_productorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\migrations\\20240828141525_productorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,43 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240828182513_m.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Migrations\\20240828182513_m.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Migrations\\20240828182513_m.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Migrations\\20240828182513_m.cs",
-              "RelativeToolTip": "ApiTest\\Migrations\\20240828182513_m.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ApiTest\\Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ApiTest\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAgwGYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T18:25:18.451Z",
+              "WhenOpened": "2024-09-02T12:19:16.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20240828141525_productOrder.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Migrations\\20240828141525_productOrder.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Migrations\\20240828141525_productOrder.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Migrations\\20240828141525_productOrder.cs",
-              "RelativeToolTip": "ApiTest\\Migrations\\20240828141525_productOrder.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwBIAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T14:15:27.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Product.cs",
               "RelativeDocumentMoniker": "ApiTest\\DAL\\Product.cs",
               "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Product.cs",
               "RelativeToolTip": "ApiTest\\DAL\\Product.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBcAAAA+AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T14:11:19.744Z"
+              "WhenOpened": "2024-08-28T14:11:19.744Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ApiTest\\DAL\\ApplicationDbContext.cs",
@@ -79,12 +64,11 @@
               "RelativeToolTip": "ApiTest\\DAL\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAA5wBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:49:12.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T13:49:12.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Order.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Order.cs",
               "RelativeDocumentMoniker": "ApiTest\\DAL\\Order.cs",

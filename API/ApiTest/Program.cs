@@ -74,6 +74,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapProductEndpoints();
+//app.MapProductEndpoints();
 
 app.Run();
