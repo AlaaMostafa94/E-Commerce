@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ApiTest.DAL;
 using ApiTest.Repository;
+using ApiTest.DTO;
 
 namespace ApiTest.Controllers
 {
@@ -24,14 +25,15 @@ namespace ApiTest.Controllers
         [HttpGet]
         public  IActionResult GetCategories()
         {
-            IEnumerable<Category> categories= _unitOfWork.CategoryRepo.GetAll();
+            IEnumerable<Category> categories = _unitOfWork.CategoryRepo.GetAll();
             return Ok(categories);
+
         }
 
         [HttpGet("{id}")]
         public IActionResult GetCategory(int id)
         {
-            var category = _unitOfWork.CategoryRepo.GetById(id); 
+            var category = _unitOfWork.CategoryRepo.GetById(id);
 
             if (category == null)
             {
@@ -39,21 +41,25 @@ namespace ApiTest.Controllers
             }
 
             return Ok(category);
+
         }
 
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public IActionResult PutCategory(int id, Category category)
+        public IActionResult PutCategory(int id, CategoryDTO categoryDto)
         {
-            if (id != category.ID)
+            Category category = _unitOfWork.CategoryRepo.GetById(id);
+            if (category == null)
             {
-                return BadRequest();
+                return NotFound();
             }
 
+            category.Name = categoryDto.Name;
+
             _unitOfWork.CategoryRepo.Update(category);
+
             try
             {
-
                 _unitOfWork.Save();
             }
             catch (DbUpdateConcurrencyException)
@@ -69,14 +75,20 @@ namespace ApiTest.Controllers
             }
 
             return NoContent();
+
+
         }
 
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public IActionResult PostCategory(Category category)
+        public IActionResult PostCategory(CategoryDTO categoryDto)
         {
+            Category category = new Category
+            {
+                Name = categoryDto.Name,
+            };
             _unitOfWork.CategoryRepo.Add(category);
-            int result=_unitOfWork.Save();
+            int result = _unitOfWork.Save();
 
             if (result == 1)
             {
@@ -99,7 +111,7 @@ namespace ApiTest.Controllers
             }
 
             _unitOfWork.CategoryRepo.Remove(category);
-            int result=_unitOfWork.Save();
+            int result = _unitOfWork.Save();
             if (result == 1)
             {
                 return NoContent();
@@ -110,7 +122,7 @@ namespace ApiTest.Controllers
 
         private bool CategoryExists(int id)
         {
-            Category category=_unitOfWork.CategoryRepo.Find(c=>c.ID==id).FirstOrDefault();
+            Category category = _unitOfWork.CategoryRepo.Find(c => c.ID == id).FirstOrDefault();
             return category != null;
         }
     }

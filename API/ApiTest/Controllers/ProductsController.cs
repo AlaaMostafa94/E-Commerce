@@ -9,6 +9,7 @@ using ApiTest.DAL;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ApiTest.Repository;
+using ApiTest.DTO;
 
 namespace ApiTest.Controllers
 {
@@ -64,12 +65,18 @@ namespace ApiTest.Controllers
 
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public IActionResult PutProduct(int id, Product product)
+        public IActionResult PutProduct(int id, ProductDTO productDto)
         {
-            if (id != product.ID)
+            Product product = _unitOfWork.ProductRepo.GetById(id);
+            if (product == null)
             {
-                return BadRequest();
+                return NotFound();
             }
+            product.AvailableQuantity = productDto.AvailableQuantity;
+            product.CategoryID = productDto.CategoryID;
+            product.Description= productDto.Description;
+            product.Price = productDto.Price;
+            product.Name = productDto.Name;
 
             _unitOfWork.ProductRepo.Update(product); 
 
@@ -95,8 +102,16 @@ namespace ApiTest.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         //[Authorize]
         [HttpPost]
-        public IActionResult PostProduct(Product product)
+        public IActionResult PostProduct(ProductDTO productDto)
         {
+            Product product = new Product()
+            {
+                AvailableQuantity = productDto.AvailableQuantity,
+                CategoryID = productDto.CategoryID,
+                Description= productDto.Description,
+                Name = productDto.Name,
+                Price = productDto.Price
+            };
             _unitOfWork.ProductRepo.Add(product);
             int result = _unitOfWork.Save();
             if (result == 1)
