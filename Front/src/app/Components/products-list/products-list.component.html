@@ -1,30 +1,21 @@
-{{prdList | json}}<br>
-<!-- {{prdList[0] | json}}
-<h1>{{prdList[0].id}}</h1> -->
-<a class="btn btn-success" routerLink="/Admin/Products/AddNewProduct">Add Product</a>
-<table class="table">
-    <thead>
-        <tr>
-            <th>No.</th>
-            <th>Name</th>
-            <th>Avail. quantity</th>
-            <th>Price</th>
-            <th>Details</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of prdList, let i=index">
-            <td>{{i+1}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.availableQuantity}}</td>
-            <td>{{item.price |currency}}</td>
-            <td><button type="button" class="btn btn-success" (click)="goToProductDetails(item.id)">Details</button></td>
-            <td><button type="button" class="btn btn-warning" (click)="goToProductEdit(item.id)">Edit</button></td>
-            <td><button type="button" class="btn btn-danger" mat-raised-button (click)="openDialog('500ms', '500ms',item.id)">Delete</button></td>
+<div *ngIf="productsList.length==0">No Products found in this category</div>
+<div *ngIf="productsList.length!=0">
+    <h3>Products : </h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productsList, let i=index">
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
 
 
-        </tr>
-    </tbody>
-</table>
+            </tr>
+        </tbody>
+    </table>
+</div>

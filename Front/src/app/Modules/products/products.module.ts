@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductsListComponent } from '../../Components/products-list/products-list.component';
+import { AllProductsComponent } from '../../Components/all-products/all-products.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailsComponent } from '../../Components/product-details/product-details.component';
@@ -12,15 +12,15 @@ import { TestAngularMaterialComponent } from '../../Components/test-angular-mate
 
 
 const routes: Routes=[
-  {path:'ProductList',component:ProductsListComponent},
-  {path: 'ProductList/:prodId',component:ProductDetailsComponent},
+  {path:'AllProducts',component:AllProductsComponent},
+  {path: 'AllProducts/:prodId',component:ProductDetailsComponent},
   {path:'AddNewProduct',component:AddProductComponent},
   {path:'EditProduct/:prdId',component:EditProductComponent},
-   {path:'',component:TestAngularMaterialComponent,pathMatch:'full'}
+   {path:'',redirectTo:'/Admin/Products/AllProducts',pathMatch:'full'}
 ]
 @NgModule({
   declarations: [
-    ProductsListComponent,
+    AllProductsComponent,
     ProductDetailsComponent,
     AddProductComponent,
     EditProductComponent

@@ -27,6 +27,7 @@ import { CheckPasswordDirective } from './Directives/check-password.directive';
 import { AdminLayoutComponent } from './Components/admin-layout/admin-layout.component';
 import { AdminNavbarComponent } from './Components/admin-navbar/admin-navbar.component';
 import { AdminFooterComponent } from './Components/admin-footer/admin-footer.component';
+import { ProductsListComponent } from './Components/products-list/products-list.component';
 
 export function tokenGetter(){
   return localStorage.getItem('jwt');
@@ -48,6 +49,7 @@ export function tokenGetter(){
     AdminLayoutComponent,
     AdminNavbarComponent,
     AdminFooterComponent,
+    // ProductsListComponent,
   ],
   imports: [
     BrowserModule,

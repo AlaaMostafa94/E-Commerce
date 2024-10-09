@@ -41,6 +41,10 @@ export class ProductService {
     return this.httpClient.get<IProduct>(`${environment.ApiUrl}/api/Products/${prdId}`)
   }
 
+  GetProductsByCategoryId(categoryId:number):Observable<IProduct[]>{
+   return this.httpClient.get<IProduct[]>(`${environment.ApiUrl}/api/Products/GetProductsByCategory/${categoryId}`)
+  }
+
   AddNewProduct(prd: IProduct) {
     return this.httpClient.post(`${environment.ApiUrl}/api/Products`, prd)//.pipe(
       //retry(3),
