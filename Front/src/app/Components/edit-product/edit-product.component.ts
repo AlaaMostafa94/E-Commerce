@@ -22,7 +22,7 @@ export class EditProductComponent implements OnInit {
       {
         next: () => {
           console.log(this.selectedPrd)
-          this.router.navigateByUrl('/Admin/Products/ProductList')
+          this.router.navigateByUrl('/Admin/Products/AllProducts')
 
         },
         error: (err) => { console.log(err) }

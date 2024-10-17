@@ -8,14 +8,28 @@ import { environment } from '../../environments/environment.development';
   providedIn: 'root'
 })
 export class CategoryService {
+  errorMessage='Error occured , Try again'
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  getAllCategories():Observable<ICategory[]>{
+  getAllCategories(): Observable<ICategory[]> {
     return this.httpClient.get<ICategory[]>(`${environment.ApiUrl}/api/Categories`)
   }
 
-  getCategoryById(categoryId:number):Observable<ICategory>{
+  getCategoryById(categoryId: number): Observable<ICategory> {
     return this.httpClient.get<ICategory>(`${environment.ApiUrl}/api/Categories/${categoryId}`)
+  }
+
+  AddNewCategory(category: ICategory) {
+    return this.httpClient.post(`${environment.ApiUrl}/api/Categories`, category)
+  }
+
+  // EditCategory(id: number, category: ICategory) {
+  //   return this.httpClient.put(`${environment.ApiUrl}/api/Categories/${id}`, category)
+  // }
+
+
+  EditCategory(id: number, category: ICategory) {
+    return this.httpClient.put(`${environment.ApiUrl}/api/Categories/${id}`, category)
   }
 }

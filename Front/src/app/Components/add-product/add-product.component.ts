@@ -61,7 +61,7 @@ export class AddProductComponent implements OnInit {
 
       next: () => {
         console.log('Done')
-        this.router.navigate(['/Admin/Products/ProductList'])
+        this.router.navigate(['/Admin/Products/AllProducts'])
       },
       error: (err) => {
          this.errMsg=this.prdService.errorMessage

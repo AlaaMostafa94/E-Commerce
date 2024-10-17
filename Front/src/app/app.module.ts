@@ -13,7 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TestAngularMaterialComponent } from './Components/test-angular-material/test-angular-material.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { ConfirmDeleteDialogComponent } from './Components/confirm-delete-dialog/confirm-delete-dialog.component';
+import {  ConfirmDeleteProductDialogComponent } from './Components/confirm-delete-product-dialog/confirm-delete-product-dialog.component';
 import { MatButtonModule } from '@angular/material/button'
 import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, MatDialogTitle } from '@angular/material/dialog';
 import { loggingInterceptor } from './Interceptors/logging.interceptor';
@@ -42,7 +42,7 @@ export function tokenGetter(){
     MainLayoutComponent,
     NotFoundComponent,
     TestAngularMaterialComponent,
-    ConfirmDeleteDialogComponent,
+    ConfirmDeleteProductDialogComponent,
     LoginComponent,
     RegisterComponent,
     CheckPasswordDirective,

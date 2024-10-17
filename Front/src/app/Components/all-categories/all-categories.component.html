@@ -1,13 +1,15 @@
 {{categoryList|json}}
-<!-- <a class="btn btn-success" routerLink="/Admin/Products/AddNewProduct">Add Product</a> -->
+<br>
+<a class="btn btn-success" (click)="goToCategoryAddOrEditCategory(0)">Add Category</a>
+<!-- routerLink="/Admin/Categories/AddAndUpdateCategory">Add Category</a> -->
 <table class="table">
     <thead>
         <tr>
             <th>No.</th>
             <th>Name</th>
             <th>Details</th>
-            <!-- <th>Edit</th>
-            <th>Delete</th> -->
+            <th>Edit</th>
+            <!-- <th>Delete</th> -->
         </tr>
     </thead>
     <tbody>
@@ -15,8 +17,8 @@
             <td>{{i+1}}</td>
             <td>{{item.name}}</td>
             <td><button type="button" class="btn btn-success" (click)="goToCategoryDetails(item.id)">Details</button></td>
-            <!-- <td><button type="button" class="btn btn-warning" (click)="goToProductEdit(item.id)">Edit</button></td>
-            <td><button type="button" class="btn btn-danger" mat-raised-button (click)="openDialog('500ms', '500ms',item.id)">Delete</button></td> -->
+            <td><button type="button" class="btn btn-warning" (click)="goToCategoryAddOrEditCategory(item.id)">Edit</button></td>
+            <!-- <td><button type="button" class="btn btn-danger" mat-raised-button (click)="openDialog('500ms', '500ms',item.id)">Delete</button></td> -->
 
 
         </tr>

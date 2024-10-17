@@ -5,20 +5,20 @@ import { ProductService } from '../../Services/product.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-confirm-delete-dialog',
-  templateUrl: './confirm-delete-dialog.component.html',
-  styleUrl: './confirm-delete-dialog.component.css',
+  selector: 'app-confirm-delete-product-dialog',
+  templateUrl: './confirm-delete-product-dialog.component.html',
+  styleUrl: './confirm-delete-product-dialog.component.css',
   providers:[MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent]
 })
-export class ConfirmDeleteDialogComponent implements OnInit{
-  constructor(public dialogRef: MatDialogRef<ConfirmDeleteDialogComponent>,@Inject(MAT_DIALOG_DATA) private data: any,private productService:ProductService,private router:Router) {
+export class ConfirmDeleteProductDialogComponent implements OnInit{
+  constructor(public dialogRef: MatDialogRef<ConfirmDeleteProductDialogComponent>,@Inject(MAT_DIALOG_DATA) private data: any,private productService:ProductService,private router:Router) {
   }
 
   deleteItem(){
     this.productService.DeleteProduct(this.data.productId).subscribe({
       next:()=>{console.log('Deleted')
       
-    this.router.navigateByUrl('/Admin/Products/ProductList')},
+    this.router.navigateByUrl('/Admin/Products/AllProducts')},
       error:(err)=>{console.log(err)}
     })
 

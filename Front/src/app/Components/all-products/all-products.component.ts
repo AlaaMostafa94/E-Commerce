@@ -3,7 +3,7 @@ import { ProductService } from '../../Services/product.service';
 import { IProduct } from '../../Models/iproduct';
 import { Router } from '@angular/router';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog'
-import { ConfirmDeleteDialogComponent } from '../confirm-delete-dialog/confirm-delete-dialog.component';
+import { ConfirmDeleteProductDialogComponent } from '../confirm-delete-product-dialog/confirm-delete-product-dialog.component';
 
 @Component({
   selector: 'app-all-products',
@@ -24,7 +24,7 @@ export class AllProductsComponent implements OnInit {
   }
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string, prdId: number): void {
-    this.dialog.open(ConfirmDeleteDialogComponent, {
+    this.dialog.open(ConfirmDeleteProductDialogComponent, {
       data: { productId: prdId },
       width: '500px',
       enterAnimationDuration,

@@ -16,6 +16,9 @@ goToCategoryDetails(categoryId:number){
 this.router.navigateByUrl(`/Admin/Categories/AllCategories/${categoryId}`)
 }
 
+goToCategoryAddOrEditCategory(categoryId:number){
+  this.router.navigateByUrl(`/Admin/Categories/AddAndUpdateCategory/${categoryId}`)
+}
   ngOnInit(): void {
 this.categoryService.getAllCategories().subscribe({
   next : (res)=>{
