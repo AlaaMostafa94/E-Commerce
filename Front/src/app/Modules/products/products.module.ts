@@ -9,6 +9,11 @@ import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditProductComponent } from '../../Components/edit-product/edit-product.component';
 import { authGuard } from '../../Guards/auth.guard';
 import { TestAngularMaterialComponent } from '../../Components/test-angular-material/test-angular-material.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, MatDialogTitle } from '@angular/material/dialog';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ConfirmDeleteProductDialogComponent } from '../../Components/confirm-delete-product-dialog/confirm-delete-product-dialog.component';
 
 
 const routes: Routes=[
@@ -23,14 +28,27 @@ const routes: Routes=[
     AllProductsComponent,
     ProductDetailsComponent,
     AddProductComponent,
-    EditProductComponent
+    EditProductComponent,
+    ConfirmDeleteProductDialogComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatDialogContent
+  ],
+  providers: [
+    provideAnimationsAsync(),
+    MatButtonModule,
+    MatDialogActions,
+    MatDialogClose,
+    MatDialogTitle,
+    MatDialogContent,
   ]
 })
 export class ProductsModule { }

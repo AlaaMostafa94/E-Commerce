@@ -6,6 +6,11 @@ import { CategoryDetailsComponent } from '../../Components/category-details/cate
 import { ProductsListComponent } from '../../Components/products-list/products-list.component';
 import { AddOrUpdateCategoryComponent } from '../../Components/add-or-update-category/add-or-update-category.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, MatDialogTitle } from '@angular/material/dialog';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ConfirmDeleteCategoryDialogComponent } from '../../Components/confirm-delete-category-dialog/confirm-delete-category-dialog.component';
 
 const routes: Routes=[
   {path:'AllCategories',component:AllCategoriesComponent},
@@ -20,13 +25,26 @@ const routes: Routes=[
      AllCategoriesComponent,
      CategoryDetailsComponent,
      AddOrUpdateCategoryComponent,
-     ProductsListComponent
+     ProductsListComponent,
+     ConfirmDeleteCategoryDialogComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatDialogContent
 
+  ],
+  providers: [
+    provideAnimationsAsync(),
+    MatButtonModule,
+    MatDialogActions,
+    MatDialogClose,
+    MatDialogTitle,
+    MatDialogContent,
   ]
 })
 export class CategoriesModule { }

@@ -24,12 +24,13 @@ export class CategoryService {
     return this.httpClient.post(`${environment.ApiUrl}/api/Categories`, category)
   }
 
-  // EditCategory(id: number, category: ICategory) {
-  //   return this.httpClient.put(`${environment.ApiUrl}/api/Categories/${id}`, category)
-  // }
 
 
   EditCategory(id: number, category: ICategory) {
     return this.httpClient.put(`${environment.ApiUrl}/api/Categories/${id}`, category)
+  }
+
+  DeleteCategory(id: number) {
+    return this.httpClient.delete(`${environment.ApiUrl}/api/Categories/${id}`)
   }
 }

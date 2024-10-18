@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\Projects\\Ecommerce\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "ApiTest\\Controllers\\CategoriesController.cs",
@@ -34,12 +34,11 @@
               "RelativeToolTip": "ApiTest\\Controllers\\CategoriesController.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAowEIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T18:41:30.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T18:41:30.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "ApiTest\\Controllers\\ProductsController.cs",
@@ -51,15 +50,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Product.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Product.cs",
               "RelativeDocumentMoniker": "ApiTest\\DAL\\Product.cs",
               "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Product.cs",
               "RelativeToolTip": "ApiTest\\DAL\\Product.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBUAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T14:11:19.744Z"
+              "WhenOpened": "2024-08-28T14:11:19.744Z",
+              "EditorCaption": ""
             }
           ]
         }

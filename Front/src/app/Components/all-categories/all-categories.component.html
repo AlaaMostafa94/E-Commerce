@@ -9,7 +9,7 @@
             <th>Name</th>
             <th>Details</th>
             <th>Edit</th>
-            <!-- <th>Delete</th> -->
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +18,7 @@
             <td>{{item.name}}</td>
             <td><button type="button" class="btn btn-success" (click)="goToCategoryDetails(item.id)">Details</button></td>
             <td><button type="button" class="btn btn-warning" (click)="goToCategoryAddOrEditCategory(item.id)">Edit</button></td>
-            <!-- <td><button type="button" class="btn btn-danger" mat-raised-button (click)="openDialog('500ms', '500ms',item.id)">Delete</button></td> -->
+            <td><button type="button" class="btn btn-danger" (click)="openDialog('500ms', '500ms',item.id)">Delete</button></td>
 
 
         </tr>
