@@ -1,0 +1,21 @@
+<hr>
+
+<h3>Order items:</h3>
+<table class="table table-bordered">
+    <thead class="bg-secondary">
+        <tr>
+            <td>Product</td>
+            <td>Required quantity</td>
+            <td>Price per unit</td>
+            <td>Total Price</td>
+        </tr>
+    </thead>
+    <tr *ngFor="let item of map | keyvalue">
+        <td>{{item.key.name}}</td>
+        <td>{{item.value}}</td>
+        <td>{{item.key.price | currency}}</td>
+        <td>{{TotalQuantityPrice(item.value,item.key.price) | currency}}</td>
+    </tr>
+</table>
+<hr>
+<p>Total order price: {{calculateTotalOrderPrice() | currency}}</p>

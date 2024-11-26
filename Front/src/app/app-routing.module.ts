@@ -6,6 +6,7 @@ import { MainLayoutComponent } from './Components/main-layout/main-layout.compon
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { AdminLayoutComponent } from './Components/admin-layout/admin-layout.component';
+import { TestAngularMaterialComponent } from './Components/test-angular-material/test-angular-material.component';
 
 const routes: Routes = [
   {path:'Admin',component:AdminLayoutComponent,children:[
@@ -14,8 +15,10 @@ const routes: Routes = [
 
   ]},
   {path:'',component:MainLayoutComponent,children:[
-     {path:'',redirectTo:'/Home',pathMatch:'full'},
      {path:'Home',component:HomeComponent},
+     {path: 'Orders', loadChildren: () => import('./Modules/orders/orders.module').then(m => m.OrdersModule)},
+     {path:'',redirectTo:'/Home',pathMatch:'full'},
+
     // {path:'Login',component:LoginComponent},
     // {path:'Register',component:RegisterComponent},
   ]},

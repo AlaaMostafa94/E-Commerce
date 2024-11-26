@@ -11,7 +11,6 @@ import { NotFoundComponent } from './Components/not-found/not-found.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { TestAngularMaterialComponent } from './Components/test-angular-material/test-angular-material.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button'
 import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, MatDialogTitle } from '@angular/material/dialog';
@@ -40,7 +39,6 @@ export function tokenGetter(){
     HomeComponent,
     MainLayoutComponent,
     NotFoundComponent,
-    TestAngularMaterialComponent,
     LoginComponent,
     RegisterComponent,
     CheckPasswordDirective,
