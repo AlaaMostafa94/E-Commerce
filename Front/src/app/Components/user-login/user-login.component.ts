@@ -6,11 +6,11 @@ import { environment } from '../../../environments/environment.development';
 import { ILogin } from '../../Models/ilogin';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  selector: 'app-user-login',
+  templateUrl: './user-login.component.html',
+  styleUrl: './user-login.component.css'
 })
-export class LoginComponent {
+export class UserLoginComponent {
 
    invalidLogin!:boolean
 userLogin:ILogin
@@ -23,7 +23,7 @@ userLogin:ILogin
   //     'password':form.value.password
   //   }
 
-     this.httpClient.post(`${environment.ApiUrl}/api/Auth/login`,this.userLogin).subscribe({
+     this.httpClient.post(`${environment.ApiUrl}/api/Auth/UserLogin`,this.userLogin).subscribe({
       next:(response)=>{
         const token=(<any>response).token;
         localStorage.setItem('jwt',token);

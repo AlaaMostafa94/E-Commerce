@@ -15,7 +15,7 @@ namespace ApiTest.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize(AuthenticationSchemes=JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ProductsController : ControllerBase
     {
 
@@ -28,6 +28,7 @@ namespace ApiTest.Controllers
   
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult GetProducts()
         {
             IEnumerable<Product> products = _unitOfWork.ProductRepo.GetAll();
@@ -36,6 +37,8 @@ namespace ApiTest.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
+
         public IActionResult GetProduct(int id)
         {
             var product = _unitOfWork.ProductRepo.GetById(id); 
@@ -49,7 +52,7 @@ namespace ApiTest.Controllers
         }
 
         [HttpGet("GetProductsByCategory/{CategoryId}")]
-        
+        [AllowAnonymous]
         public IActionResult GetProductByCategoryId(int CategoryId)
         {
             var products = _unitOfWork.ProductRepo.Find(p => p.CategoryID == CategoryId);

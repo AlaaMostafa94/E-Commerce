@@ -1,8 +1,8 @@
 [
   {
     "ContainingType": "ApiTest.Controllers.AuthController",
-    "Method": "Login",
-    "RelativePath": "api/Auth/login",
+    "Method": "AdminLogin",
+    "RelativePath": "api/Auth/AdminLogin",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -26,6 +26,22 @@
       {
         "Name": "model",
         "Type": "ApiTest.Models.RegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiTest.Controllers.AuthController",
+    "Method": "UserLogin",
+    "RelativePath": "api/Auth/UserLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ApiTest.Models.LoginModel",
         "IsRequired": true
       }
     ],

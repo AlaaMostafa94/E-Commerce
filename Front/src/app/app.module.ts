@@ -17,7 +17,7 @@ import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogModule, Ma
 import { loggingInterceptor } from './Interceptors/logging.interceptor';
 import { headersInterceptor } from './Interceptors/headers.interceptor';
 import { ErrorsInterceptor } from './Interceptors/errors.interceptor';
-import { LoginComponent } from './Components/login/login.component';
+import { UserLoginComponent } from './Components/user-login/user-login.component';
 import { JwtModule } from '@auth0/angular-jwt';
 import { environment } from '../environments/environment.development';
 import { RegisterComponent } from './Components/register/register.component';
@@ -26,6 +26,8 @@ import { AdminLayoutComponent } from './Components/admin-layout/admin-layout.com
 import { AdminNavbarComponent } from './Components/admin-navbar/admin-navbar.component';
 import { AdminFooterComponent } from './Components/admin-footer/admin-footer.component';
 import { ProductsListComponent } from './Components/products-list/products-list.component';
+import { AdminLoginComponent } from './Components/admin-login/admin-login.component';
+import { AdminDashboardComponent } from './Components/admin-dashboard/admin-dashboard.component';
 
 export function tokenGetter(){
   return localStorage.getItem('jwt');
@@ -39,12 +41,14 @@ export function tokenGetter(){
     HomeComponent,
     MainLayoutComponent,
     NotFoundComponent,
-    LoginComponent,
+    UserLoginComponent,
     RegisterComponent,
     CheckPasswordDirective,
     AdminLayoutComponent,
     AdminNavbarComponent,
     AdminFooterComponent,
+    AdminLoginComponent,
+    AdminDashboardComponent,
     // ProductsListComponent,
   ],
   imports: [

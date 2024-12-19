@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\Projects\\Ecommerce\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\dal\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|solutionrelative:apitest\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56F2A74B-E466-4728-9CF9-4895039784AE}|ApiTest\\ApiTest.csproj|e:\\projects\\ecommerce\\api\\apitest\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,43 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "ApiTest\\Controllers\\CategoriesController.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "ApiTest\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAowEIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T18:41:30.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "ApiTest\\Controllers\\ProductsController.cs",
               "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "ApiTest\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAgwFEAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwDYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T12:19:16.114Z"
+              "WhenOpened": "2024-12-11T03:04:09.557Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Product.cs",
-              "RelativeDocumentMoniker": "ApiTest\\DAL\\Product.cs",
-              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\DAL\\Product.cs",
-              "RelativeToolTip": "ApiTest\\DAL\\Product.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBIAAAApAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ApiTest\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Projects\\Ecommerce\\API\\ApiTest\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ApiTest\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAAIcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T14:11:19.744Z",
+              "WhenOpened": "2024-11-30T15:18:08.108Z",
               "EditorCaption": ""
             }
           ]

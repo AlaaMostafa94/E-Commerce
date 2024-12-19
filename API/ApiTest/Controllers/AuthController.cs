@@ -71,8 +71,8 @@ namespace ApiTest.Controllers
 
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginModel model)
+        [HttpPost("UserLogin")]
+        public async Task<IActionResult> UserLogin(LoginModel model)
         {
 
             if (model == null)
@@ -88,16 +88,9 @@ namespace ApiTest.Controllers
             }
             
                 bool userExists = await _userManager.CheckPasswordAsync(applicationUser, model.Password);
-            //bool IsAdmin = await _userManager.IsInRoleAsync(applicationUser, "Admin");
-            if (userExists)// && IsAdmin)
+            if (userExists)
             {
 
-                //List<Claim> claims = new List<Claim>
-                //{
-                //    new Claim(ClaimTypes.Email,model.Email),
-                //    new Claim(ClaimTypes.Role,"Admin")
-                    
-                //};
 
                 string tokenString = GenerateToken(new List<Claim>());
                 return Ok(new { Token = tokenString });
@@ -107,6 +100,46 @@ namespace ApiTest.Controllers
             
 
             
+
+        }
+
+
+        [HttpPost("AdminLogin")]
+        public async Task<IActionResult> AdminLogin(LoginModel model)
+        {
+
+            if (model == null)
+            {
+                return BadRequest("Invalid request");
+            }
+
+            ApplicationUser? applicationUser = await _userManager.FindByEmailAsync(model.Email);
+            if (applicationUser == null)
+            {
+                ModelState.AddModelError("", "Email or password is not correct");
+                return BadRequest();
+            }
+
+            bool userExists = await _userManager.CheckPasswordAsync(applicationUser, model.Password);
+            bool IsAdmin = await _userManager.IsInRoleAsync(applicationUser, "Admin");
+            if (userExists && IsAdmin)
+            {
+
+                List<Claim> claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Email,model.Email),
+                    new Claim(ClaimTypes.Role,"Admin")
+
+                };
+
+                string tokenString = GenerateToken(claims);
+                return Ok(new { Token = tokenString });
+            }
+            ModelState.AddModelError("", "Email or password is not correct");
+            return BadRequest(model);
+
+
+
 
         }
     }
